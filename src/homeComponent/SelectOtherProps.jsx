@@ -5,9 +5,22 @@ import FormHelperText from "@mui/material/FormHelperText";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
+import { Button } from "@mui/material";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import SpeedIcon from "@mui/icons-material/Speed";
 
 export default function SelectOtherProps() {
   const [age, setAge] = React.useState("");
+
+  const buttonStyle = {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "18px 16px",
+    textTransform: "none",
+    backgroundColor: "#e6e6ff",
+    color: "black",
+  };
 
   const handleChange = (event) => {
     setAge(event.target.value);
@@ -16,85 +29,32 @@ export default function SelectOtherProps() {
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
       <FormControl sx={{ m: 1, minWidth: 120 }} disabled>
-        <InputLabel id="demo-simple-select-disabled-label">
-          <AccountBalanceIcon />
+        <Button variant="contained" color="primary" style={buttonStyle}>
+          <SpeedIcon style={{ color: "green" }} />
           Dashboard
-        </InputLabel>
-        <Select
-          labelId="demo-simple-select-disabled-label"
-          id="demo-simple-select-disabled"
-          value={age}
-          label="Age"
-          onChange={handleChange}
-        >
-          <MenuItem value="">
-            <em>None</em>
-          </MenuItem>
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
-        </Select>
+          <ArrowForwardIosIcon />
+        </Button>
       </FormControl>
       <FormControl sx={{ m: 1, minWidth: 120 }} error>
-        <InputLabel id="demo-simple-select-error-label">
+        <Button variant="contained" color="primary" style={buttonStyle}>
           <AccountBalanceIcon />
           Companies
-        </InputLabel>
-        <Select
-          labelId="demo-simple-select-error-label"
-          id="demo-simple-select-error"
-          value={age}
-          label="Age"
-          onChange={handleChange}
-        >
-          <MenuItem value="">
-            <em>None</em>
-          </MenuItem>
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
-        </Select>
+          <ArrowForwardIosIcon />
+        </Button>
       </FormControl>
       <FormControl sx={{ m: 1, minWidth: 120 }}>
-        <InputLabel id="demo-simple-select-readonly-label">
+        <Button variant="contained" color="primary" style={buttonStyle}>
           <AccountBalanceIcon />
-          Support & Tickets
-        </InputLabel>
-        <Select
-          labelId="demo-simple-select-readonly-label"
-          id="demo-simple-select-readonly"
-          value={age}
-          label="Age"
-          onChange={handleChange}
-          inputProps={{ readOnly: true }}
-        >
-          <MenuItem value="">
-            <em>None</em>
-          </MenuItem>
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
-        </Select>
+          Support & Ticket
+          <ArrowForwardIosIcon />
+        </Button>
       </FormControl>
       <FormControl required sx={{ m: 1, minWidth: 120 }}>
-        <InputLabel id="demo-simple-select-required-label">
+        <Button variant="contained" color="primary" style={buttonStyle}>
           <AccountBalanceIcon />
-          User Admins
-        </InputLabel>
-        <Select
-          labelId="demo-simple-select-required-label"
-          id="demo-simple-select-required"
-          value={age}
-          label="Age *"
-          onChange={handleChange}
-        >
-          <MenuItem value="">
-            <em>None</em>
-          </MenuItem>
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
-        </Select>
+          User Admin
+          <ArrowForwardIosIcon />
+        </Button>
       </FormControl>
     </div>
   );

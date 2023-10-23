@@ -16,7 +16,7 @@ const Home = () => {
           }}
         >
           <h2 style={{ color: "blue", display: "flex", flexWrap: "wrap" }}>
-            TEXLA<span>CULTURE</span>
+            <span style={{ border: "2px solid blue" }}>TEXLA</span>CULTURE
           </h2>
           <p>GENERAL</p>
           <SelectOtherProps />
@@ -55,7 +55,7 @@ const Home = () => {
             // backgroundColor: "red",
             width: "450px",
             height: "179px",
-            border: "1px solid blue",
+            border: "none",
           }}
         >
           <p style={{ marginLeft: "10px" }}>Key Performance Indicator</p>
@@ -64,7 +64,7 @@ const Home = () => {
               style={{
                 width: "150px",
                 height: "100px",
-                borderLeft: "1px solid blue",
+                borderLeft: "2px solid blue",
               }}
             >
               <p style={{ marginLeft: "5px" }}>Client Retention Rate</p>
@@ -74,7 +74,7 @@ const Home = () => {
               style={{
                 width: "130px",
                 height: "100px",
-                borderLeft: "1px solid blue",
+                borderLeft: "2px solid blue",
               }}
             >
               <p style={{ marginLeft: "5px" }}>Client Satisfaction</p>
@@ -84,7 +84,7 @@ const Home = () => {
               style={{
                 width: "150px",
                 height: "100px",
-                borderLeft: "1px solid green",
+                borderLeft: "2px solid green",
               }}
             >
               <p style={{ marginLeft: "5px" }}>Revenue Generated</p>
@@ -98,7 +98,7 @@ const Home = () => {
             // backgroundColor: "blue",
             width: "400px",
             height: "179px",
-            border: "1px solid blue",
+            border: "none",
           }}
         >
           <p style={{ marginLeft: "10px" }}>Companies Status</p>
@@ -107,7 +107,7 @@ const Home = () => {
               style={{
                 width: "130px",
                 height: "100px",
-                borderLeft: "1px solid blue",
+                borderLeft: "2px solid blue",
               }}
             >
               <p style={{ marginLeft: "5px" }}>Total</p>
@@ -117,7 +117,7 @@ const Home = () => {
               style={{
                 width: "130px",
                 height: "100px",
-                borderLeft: "1px solid green",
+                borderLeft: "2px solid green",
               }}
             >
               <p style={{ marginLeft: "5px" }}>Active</p>
@@ -127,7 +127,7 @@ const Home = () => {
               style={{
                 width: "130px",
                 height: "100px",
-                borderLeft: "1px solid blue",
+                borderLeft: "2px solid blue",
               }}
             >
               <p style={{ marginLeft: "5px" }}>New</p>
@@ -144,7 +144,7 @@ const Home = () => {
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
-            border: "1px solid blue",
+            border: "none",
           }}
         >
           <p style={{ marginLeft: "5px" }}>Active User Base</p>
@@ -247,124 +247,104 @@ const Home = () => {
           <table style={{ borderCollapse: "collapse", width: "100%" }}>
             <thead>
               <tr style={{ marginBottom: "10px" }}>
-                <th style={{ border: "1px solid black", padding: "8px" }}>
-                  Company Name
-                </th>
-                <th style={{ border: "1px solid black", padding: "8px" }}>
+                <th style={{ border: "none", padding: "8px" }}>Company Name</th>
+                <th style={{ border: "none", padding: "8px" }}>
                   Onboarding date
                 </th>
-                <th style={{ border: "1px solid black", padding: "8px" }}>
-                  Go-live Date
-                </th>
-                <th style={{ border: "1px solid black", padding: "8px" }}>
+                <th style={{ border: "none", padding: "8px" }}>Go-live Date</th>
+                <th style={{ border: "none", padding: "8px" }}>
                   Total User base
                 </th>
-                <th style={{ border: "1px solid black", padding: "8px" }}>
-                  Last Billing
-                </th>
-                <th style={{ border: "1px solid black", padding: "8px" }}>
-                  Status
-                </th>
+                <th style={{ border: "none", padding: "8px" }}>Last Billing</th>
+                <th style={{ border: "none", padding: "8px" }}>Status</th>
               </tr>
             </thead>
             <tbody>
               <tr style={{ marginBottom: "10px" }}>
                 <td
                   style={{
-                    border: "1px solid black",
+                    border: "none",
                     padding: "8px",
                     backgroundColor: "#e6f0ff",
                   }}
                 >
                   Texlaculture <p>INV-17048</p>
                 </td>
-                <td style={{ border: "1px solid black", padding: "8px" }}>
-                  12 Jan 2022
-                </td>
-                <td style={{ border: "1px solid black", padding: "8px" }}>
-                  07 Aug 2022
-                </td>
-                <td style={{ border: "1px solid black", padding: "8px" }}>
-                  244
-                </td>
-                <td style={{ border: "1px solid black", padding: "8px" }}>
-                  07 Aug 2022
-                </td>
+                <td style={{ border: "none", padding: "8px" }}>12 Jan 2022</td>
+                <td style={{ border: "none", padding: "8px" }}>07 Aug 2022</td>
+                <td style={{ border: "none", padding: "8px" }}>244</td>
+                <td style={{ border: "none", padding: "8px" }}>07 Aug 2022</td>
                 <td
                   style={{
-                    border: "1px solid black",
+                    border: "none",
                     padding: "8px",
-                    backgroundColor: "#99ffbb",
+
                     color: "#00b300",
                   }}
                 >
-                  Active
+                  <button
+                    style={{ backgroundColor: "#99ffbb", border: "none" }}
+                  >
+                    Active
+                  </button>
                 </td>
               </tr>
               <tr style={{ marginBottom: "10px" }}>
                 <td
                   style={{
-                    border: "1px solid black",
+                    border: "none",
                     padding: "8px",
                     backgroundColor: "#e6f0ff",
                   }}
                 >
                   Pinch Life <p>INV-17049</p>
                 </td>
-                <td style={{ border: "1px solid black", padding: "8px" }}>
-                  11 Feb 2022
-                </td>
-                <td style={{ border: "1px solid black", padding: "8px" }}>
-                  06 May 2022
-                </td>
-                <td style={{ border: "1px solid black", padding: "8px" }}>
-                  1000
-                </td>
-                <td style={{ border: "1px solid black", padding: "8px" }}>
-                  07 Aug 2022
-                </td>
+                <td style={{ border: "none", padding: "8px" }}>11 Feb 2022</td>
+                <td style={{ border: "none", padding: "8px" }}>06 May 2022</td>
+                <td style={{ border: "none", padding: "8px" }}>1000</td>
+                <td style={{ border: "none", padding: "8px" }}>07 Aug 2022</td>
                 <td
                   style={{
-                    border: "1px solid black",
+                    border: "none",
                     padding: "8px",
-                    backgroundColor: "#99ffbb",
+
                     color: "#00b300",
                   }}
                 >
-                  Active
+                  <button
+                    style={{ backgroundColor: "#99ffbb", border: "none" }}
+                  >
+                    Active
+                  </button>
                 </td>
               </tr>
               <tr style={{ marginBottom: "10px" }}>
                 <td
                   style={{
-                    border: "1px solid black",
+                    border: "none",
                     padding: "8px",
                     backgroundColor: "#ffe6f9",
                   }}
                 >
                   O Buddy <p>INV-13042</p>
                 </td>
-                <td style={{ border: "1px solid black", padding: "8px" }}>
-                  10 sept 2022
-                </td>
-                <td style={{ border: "1px solid black", padding: "8px" }}>
-                  05 Oct 2022
-                </td>
-                <td style={{ border: "1px solid black", padding: "8px" }}>
-                  150
-                </td>
-                <td style={{ border: "1px solid black", padding: "8px" }}>
-                  207 Aug 2022
-                </td>
+                <td style={{ border: "none", padding: "8px" }}>10 sept 2022</td>
+                <td style={{ border: "none", padding: "8px" }}>05 Oct 2022</td>
+                <td style={{ border: "none", padding: "8px" }}>150</td>
+                <td style={{ border: "none", padding: "8px" }}>207 Aug 2022</td>
                 <td
                   style={{
-                    border: "1px solid black",
+                    border: "none",
                     padding: "8px",
-                    backgroundColor: "#cccccc",
+
                     color: "#000000",
                   }}
                 >
-                  Draft
+                  <button
+                    style={{ backgroundColor: "#cccccc", border: "none" }}
+                  >
+                    Draft
+                  </button>
                 </td>
               </tr>
             </tbody>
@@ -384,42 +364,45 @@ const Home = () => {
             left: "60%",
           }}
         >
+          <span>East</span>
           <div
             style={{
-              backgroundColor: "blue",
+              backgroundColor: "#ff751a",
               width: "20px",
               height: "20px",
               borderRadius: "50%",
+              marginRight: "30px",
             }}
           ></div>
-          <span style={{ marginRight: "30px" }}>East</span>
+          <span>North</span>
           <div
             style={{
-              backgroundColor: "#9900ff",
+              backgroundColor: "#00cc66",
               width: "20px",
               height: "20px",
               borderRadius: "50%",
+              marginRight: "30px",
             }}
           ></div>
-          <span style={{ marginRight: "30px" }}>North</span>
+          <span>South</span>
           <div
             style={{
-              backgroundColor: "#009999",
+              backgroundColor: "orange",
               width: "20px",
               height: "20px",
               borderRadius: "50%",
-            }}
-          ></div>
-          <span style={{ marginRight: "30px" }}>South</span>
-          <div
-            style={{
-              backgroundColor: "#cc0099",
-              width: "20px",
-              height: "20px",
-              borderRadius: "50%",
+              marginRight: "30px",
             }}
           ></div>
           <span>West</span>
+          <div
+            style={{
+              backgroundColor: "#1a1aff",
+              width: "20px",
+              height: "20px",
+              borderRadius: "50%",
+            }}
+          ></div>
         </div>
 
         <TwoSimplePieChart />
