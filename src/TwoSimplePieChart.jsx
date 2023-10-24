@@ -14,8 +14,8 @@ export default function TwoSimplePieChart() {
       series={[
         {
           data: data2,
-          cx: 500,
-          cy: 200,
+          cx: 100,
+          cy: 100,
           innerRadius: 40,
           outerRadius: 80,
         },

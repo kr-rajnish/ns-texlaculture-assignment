@@ -8,6 +8,7 @@ import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
 import { Button } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import SpeedIcon from "@mui/icons-material/Speed";
+import { Link } from "react-router-dom";
 
 export default function SelectOtherProps() {
   const [age, setAge] = React.useState("");
@@ -20,41 +21,46 @@ export default function SelectOtherProps() {
     textTransform: "none",
     backgroundColor: "#e6e6ff",
     color: "black",
-  };
-
-  const handleChange = (event) => {
-    setAge(event.target.value);
+    width: "100%",
   };
 
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
       <FormControl sx={{ m: 1, minWidth: 120 }} disabled>
-        <Button variant="contained" color="primary" style={buttonStyle}>
-          <SpeedIcon style={{ color: "green" }} />
-          Dashboard
-          <ArrowForwardIosIcon />
-        </Button>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <Button variant="contained" color="primary" style={buttonStyle}>
+            <SpeedIcon style={{ color: "green" }} />
+            Dashboard
+            <ArrowForwardIosIcon />
+          </Button>
+        </Link>
       </FormControl>
       <FormControl sx={{ m: 1, minWidth: 120 }} error>
-        <Button variant="contained" color="primary" style={buttonStyle}>
-          <AccountBalanceIcon />
-          Companies
-          <ArrowForwardIosIcon />
-        </Button>
+        <Link to="/companies" style={{ textDecoration: "none" }}>
+          <Button variant="contained" color="primary" style={buttonStyle}>
+            <AccountBalanceIcon />
+            Companies
+            <ArrowForwardIosIcon />
+          </Button>
+        </Link>
       </FormControl>
       <FormControl sx={{ m: 1, minWidth: 120 }}>
-        <Button variant="contained" color="primary" style={buttonStyle}>
-          <AccountBalanceIcon />
-          Support & Ticket
-          <ArrowForwardIosIcon />
-        </Button>
+        <Link to="/support-ticket" style={{ textDecoration: "none" }}>
+          <Button variant="contained" color="primary" style={buttonStyle}>
+            <AccountBalanceIcon />
+            Support & Ticket
+            <ArrowForwardIosIcon />
+          </Button>
+        </Link>
       </FormControl>
       <FormControl required sx={{ m: 1, minWidth: 120 }}>
-        <Button variant="contained" color="primary" style={buttonStyle}>
-          <AccountBalanceIcon />
-          User Admin
-          <ArrowForwardIosIcon />
-        </Button>
+        <Link to="/user-admin" style={{ textDecoration: "none" }}>
+          <Button variant="contained" color="primary" style={buttonStyle}>
+            <AccountBalanceIcon />
+            User Admin
+            <ArrowForwardIosIcon />
+          </Button>
+        </Link>
       </FormControl>
     </div>
   );
