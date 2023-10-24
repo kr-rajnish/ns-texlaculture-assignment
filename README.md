@@ -2,6 +2,9 @@
 
 Deployed Link:- https://darling-meringue-ffc3a0.netlify.app/
 
+For run :- npi i
+comand for run:- npm reu dev
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
